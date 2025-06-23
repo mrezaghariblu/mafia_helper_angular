@@ -1,0 +1,44 @@
+<div class="mafia-header">🕵️‍♂️ Mafia Game Manager</div>
+
+<nz-card [nzTitle]="'Create New Game'" [nzBordered]="false"
+    style="margin-bottom: 24px;">
+    <form nz-form>
+        <nz-form-item>
+            <nz-form-label [nzSpan]="6" nzRequired>Game Title</nz-form-label>
+            <nz-form-control [nzSpan]="18">
+                <input nz-input placeholder="e.g., Gangs of Nightfall" />
+            </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+            <nz-form-label [nzSpan]="6" nzRequired>Players</nz-form-label>
+            <nz-form-control [nzSpan]="18">
+                <nz-select nzMode="tags" nzPlaceHolder="Add players">
+                    <nz-option *ngFor="let name of ['Ali', 'Sara', 'Reza']"
+                        [nzValue]="name" [nzLabel]="name"></nz-option>
+                </nz-select>
+            </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+            <nz-form-control [nzSpan]="24" class="text-right">
+                <button nz-button nzType="primary" icon="plus">Start
+                    Game</button>
+            </nz-form-control>
+        </nz-form-item>
+    </form>
+</nz-card>
+
+<nz-card [nzTitle]="'Active Games'" [nzBordered]="false">
+    sghlllllllllllllllllllllllllll
+    <!-- <nz-list [nzData]="[1,2]" [nzRenderItem]="item => item">
+        <ng-template #item let-i>
+            <nz-list-item>
+                <nz-list-item-meta
+                    [nzTitle]="'Game #' + i"
+                    [nzDescription]="'Started at 22:30'"></nz-list-item-meta>
+                <button nz-button nzType="link" nzDanger>End</button>
+            </nz-list-item>
+        </ng-template>
+    </nz-list> -->
+</nz-card>
